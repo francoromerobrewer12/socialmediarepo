@@ -1,0 +1,55 @@
+@import '../../styles/variables';
+
+.sidebarContainer{
+    flex: 2.5;
+    height: 100vh;
+    padding: 20px 30px;
+    color: $blackText;
+    overflow-y: scroll;
+    position: sticky;
+    top: 0px;
+
+    .sidebarWrapper{
+        width: 100%;
+        height: 100%;
+
+        .sidebarList{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            list-style: none;
+
+            .sidebarListItem{
+                margin-bottom: 20px;
+
+                .sidebarListIcon{
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        .showmoreButton{
+            padding:  10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .sidebarHr{
+            margin: 20px auto;
+        }
+
+        .sidebarFriendList{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 1000px){
+    .sidebarContainer{
+        transform: translateX(-100%);
+    }
+}

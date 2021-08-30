@@ -1,0 +1,151 @@
+@import '../../styles/variables';
+
+.rightbarContainer{
+    flex: 3.5;
+    padding: 20px 20px 20px 0;
+    flex-direction: column;
+
+
+    .birthdayContainer{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        box-shadow: $shadow;
+        padding: 10px 20px;
+        cursor: pointer;
+
+        .birthdayImg{
+            width: 50px;
+            height: 50px;
+        }
+
+        .birthdayText{
+            font-size: 14px;
+            margin-left: 15px;
+        }
+    }
+
+    .addImg{
+        width: 100%;
+        margin-top: 20px;
+        max-height: 250px;
+        cursor: pointer;
+    }
+
+    .onlineFriendsTittle{
+        margin: 20px 0;
+    }
+    
+    .onlineFriendsList{
+        list-style: none;
+    }
+
+    .followBtn{
+        padding: 10px 40px;
+        font-size: 16px;
+        background-color: $primary-color;
+        border: none;
+        color: white;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        .followIcon{
+            margin-left: 10px
+        }
+    }
+
+    .userInfoTittle{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .userInfoContainer{
+        margin-top: 10px;
+
+        .userInfoOption{
+            margin-bottom: 5px;
+
+            .InfoOptionKey{
+                font-weight: bold;
+            }
+
+            .InfoOptionValue{
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .userFriendsTittle{
+        @extend .userInfoTittle;
+        margin-top: 40px;
+    }
+
+    .profileFriendsList{
+        list-style: none;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .userProfileFriend{
+            margin-top: 10px;
+            margin-right: 40px; 
+            height: 90px;
+            display: flex;
+            flex-direction: column;
+
+            .profileFriendImg{
+                width: 70px;
+                height: 70px;
+                border-radius: 5px;
+                margin-right: 10px;
+                object-fit: cover;
+                margin: 0 auto;
+            }
+
+            .profileFriendName{
+                text-align: center;
+            }
+
+            
+        }
+    }
+
+    
+}
+
+@media only screen and (max-width: 1000px){
+    .rightbarContainer{
+        width: 50%;
+    }
+
+    .homeRightbarContainer{
+        width: 48%;
+        position: absolute;
+        right: 0;
+        margin: 0 20px;
+    }
+
+    .profileRightbarContainer{
+        width: 48%;
+        position: absolute;
+        right: 0;
+        margin: 0 20px;
+    }
+}
+
+
+@media only screen and (max-width: 1000px){
+    .rightbarContainer{
+        width: 80%;
+        position: absolute;
+        right: 0
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .rightbarContainer{
+        display: none;
+    }
+}

@@ -1,0 +1,31 @@
+
+.onlineFriendsListItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    .onlineFriendImgWrap{
+        position: relative;
+        display: flex;
+        width: 60px;
+        margin-right: 5px;
+
+        .onlineFriendImg{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .onlineCircle{
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: rgb(16, 187, 16);
+            position: absolute;
+            top:0;
+            right: 8px;
+            border: 2px solid white;
+        }
+    }
+}

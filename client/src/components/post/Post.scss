@@ -1,0 +1,90 @@
+@import '../../styles/variables';
+
+.postContainer{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: $shadow;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+
+    .postTop{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .postTopLeft{
+            display: flex;
+            align-items: center;
+            
+            .postUserImg{
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 10px;
+            }
+
+            .postUserName{
+                margin-right: 15px;
+            }
+
+            .postDate{
+                font-size: 14px;
+                color: grey;
+            }
+        }
+
+        .postTopIcon{
+            font-size: 25px;
+            cursor: pointer;
+        }
+    }
+
+    .postCenter{
+        margin: 10px 0;
+
+        .postCenterImg{
+            width: 100%;
+            max-height: 400px;
+            margin-top: 10px;
+        }
+    }
+
+    .postBottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .postIcons{
+            display: flex;
+            align-items: center;
+            
+            .postBottomButton{
+                font-size: 22px;
+                margin-right: 10px;
+                cursor: pointer;
+
+                .filled{
+                    fill: red;
+                }
+            }
+
+            .likeAmount{
+                font-size: 14px;
+            }
+        }
+
+        .postCommentAmount{
+            font-size: 14px;
+            color: grey;
+            cursor: pointer;
+        }
+
+        
+    }
+}

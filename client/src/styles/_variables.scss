@@ -1,0 +1,28 @@
+$primary-color: rgb(29, 148, 228);
+$blackText: black;
+$loginBack: rgb(238, 238, 238);
+
+@mixin flexCenter($direction) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
+
+//scrollbar
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(224, 224, 224);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(185, 185, 185);
+    height: 100px;
+    border-radius: 15px;
+}
+
+// shadow
+$shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;

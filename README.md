@@ -36,6 +36,7 @@ I personally prefer you to try this mode because there is an already created fri
 and enter this data:
 - Email: francoromerobrewer@gmail.com 
 - Password: 12345
+
 You will see many other posts from other users that I follow. You can see their profile pictures and posts, give them like, follow and unfollow the users.
 
 -------------------------

@@ -13,6 +13,8 @@ const app = express();
 
 dotenv.config();
 
+const PORT = process.env.PORT || 8800;
+
 mongoose.connect(process.env.MONGO_URL,{useNewUrlParser: true},() => {
     console.log("Connected to Social Media database!")
 });
@@ -48,6 +50,6 @@ app.use('/api/auth', authRoute);
 app.use('/api/posts', postRoute);
 
 
-app.listen(8800, () => {
+app.listen(PORT, () => {
     console.log("Backend server is running!")
 })
